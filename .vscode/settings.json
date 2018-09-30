@@ -1,0 +1,6 @@
+{
+    "python.linting.enabled": false,
+    "spotify.showPauseButton": true,
+    "spotify.showPlayButton": true,
+    "spotify.trackInfoFormat": "trackName - artistName"
+}

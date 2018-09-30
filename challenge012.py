@@ -1,0 +1,1 @@
+def climb_ways(n, k):
