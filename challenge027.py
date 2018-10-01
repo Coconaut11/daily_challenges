@@ -1,4 +1,4 @@
-# COMPLETED
+ # COMPLETED
 
 #example "([])[]({})" --> true
 #example "([}{})" --> false
@@ -39,7 +39,8 @@ def get_result(data):
 
 		print(to_close)
 
-		# If one of the components of the dic is not 0, it means some of the brackets haven't been closed, so we return False.
+		# If one of the components of the dic is less than 0, it means some of the brackets
+		# have been closed without having been opened before, so we return False.
 		if to_close["("] < 0 or to_close["["] < 0 or to_close["{"] < 0:
 			return False
 
