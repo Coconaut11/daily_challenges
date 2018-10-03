@@ -38,4 +38,4 @@ def justify(line, k):
     return res
 
 print(" ")
-get_result(data.split(), 50)
+get_result(data.split(), 60)
