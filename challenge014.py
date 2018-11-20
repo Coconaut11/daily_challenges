@@ -7,14 +7,14 @@ struct = namedtuple
 
 Dot = struct("dot", "x y")
 
-def getPI(k, w=20, h=20):
+def getPI(k, w=40, h=40):
     inside = 0
     for i in range(0, k):
-        if dist(Dot(w/2, h/2), Dot(random.randrange(0, w), random.randrange(0, h))) < w/2:
+        if dist(Dot(w/2, h/2), Dot(random.randrange(0, w), random.randrange(0, h))) <= w/2:
             inside += 1
     
     print(inside)
-    return (4*inside/k)
+    return (4*inside)/k
 
 def dist(dot0, dot1):
     x = dot1.x-dot0.x

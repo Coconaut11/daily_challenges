@@ -3,13 +3,12 @@
 data = "AAAABBBCCDAA"
 
 def encode(data):
-	count = 0
+	count = 1
 	res = ""
 	char = None
 	for i in range(0, len(data)):
 		if i == 0:
 			char = data[0]
-			count = 1
 			continue
 
 		if char == data[i]:
