@@ -1,5 +1,6 @@
 map = [3, 0, 1, 3, 0, 5]
 map2 = [2, 1, 2]
+map3 = [3, 0, 1, 0, 0, 5]
 
 def calc_water(map):
     top = 0
@@ -23,5 +24,5 @@ def draw_map(map):
                 line += "  "
         print(line)
 
-draw_map(map)
-print(calc_water(map))
+draw_map(map3)
+print(calc_water(map3))
